@@ -1,4 +1,4 @@
-from django.http import HttpResponse,request
+from django.http import HttpResponse,request,Http404
 from django.shortcuts import render
 
 
@@ -9,11 +9,13 @@ from series.models import Serie,Episodie
 
 class SeriesView(View):
     def get(self, request):
-        context = {
-            'series' : list(Serie.objects.all())
+        if request.user.is_authenticated:
+            context = {
+                'series' : list(Serie.objects.all())
 
-        }
-        return render(request, 'series.html', context=context)
+            }
+            return render(request, 'series.html', context=context)
+        return Http404()
     
 
 class EpisodeView(View):
