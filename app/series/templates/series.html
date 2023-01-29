@@ -10,8 +10,14 @@
     {% for serie in series %}
 
     <div class="serie__cotainer">
-        <span><a href="{% url 'nameurl' serie_id=serie.id %}">{{ serie.title }}</a></span>
-        <span>{{ serie.descripcion }}</span>
+        <table border="2" style="display: inline-block;">
+            <thead>
+                <tr>
+                    <th><a href="{% url 'nameurl' serie_id=serie.id %}">{{ serie.title }}</a></th>
+                    <th>{{ serie.descripcion }}</th>
+                </tr>
+        </table>
+        
     </div>
 
     {% endfor %}
