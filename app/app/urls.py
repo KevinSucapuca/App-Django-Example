@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('series/', SeriesView.as_view()),
     path('episodes/<int:serie_id>',  EpisodeView.as_view(), name='nameurl'),
-    path('login/', LoginView.as_view(), name='login'),
+    path('', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
 
 ]

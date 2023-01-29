@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
     <title>Episode</title>
 </head>
 <body>
     {% for episode in episodes %}
 
-    <div class="episodie__cotainer" style="text-align:center">
-        <span>{{ episode.name }}</span>
-        <span>{{ episode.number }}</span>
+    <div class="episodie__cotainer" >
+        
+
+        <table border="2" align="center">
+            <thead>
+                <tr>
+                    <th>{{ episode.name }}</th>
+                    <th>{{ episode.number }}</th>
+                </tr>
+        </table>
+
+
+
     </div>
 
     {% endfor %}
