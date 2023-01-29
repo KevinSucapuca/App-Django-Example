@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from series.views import SeriesView
+from series.views import SeriesView,EpisodeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('series/', SeriesView.as_view())
-    
+    path('series/', SeriesView.as_view()),
+    path('episodes/<int:serie_id>',  EpisodeView.as_view(), name='nameurl'),
+
 ]

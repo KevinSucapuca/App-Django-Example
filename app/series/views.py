@@ -13,17 +13,17 @@ class SeriesView(View):
             'series' : list(Serie.objects.all())
 
         }
-        return render(request, 'series.html', context)
+        return render(request, 'series.html', context=context)
     
 
 class EpisodeView(View):
-    def get(self, request, serie_id :int):
+    def get(self, request, serie_id: int):
         context = {
-            'episodie' : list(Episodie.objects.filter(serie_id=serie_id))
+            'episodes': list(Episodie.objects.filter(serie_id=serie_id))
             
 
         }
-        return render(request, 'episode.html', context)
+        return render(request, 'episode.html', context=context)
     
     
     

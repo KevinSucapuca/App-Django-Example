@@ -7,11 +7,11 @@
     <title>Episode</title>
 </head>
 <body>
-    {% for episode in espisodie %}
+    {% for episode in episodes %}
 
     <div class="episodie__cotainer">
-        <span>{{ episode.title }}</span>
-        <span>{{ episode.descripcion }}</span>
+        <span>{{ episode.name }}</span>
+        <span>{{ episode.number }}</span>
     </div>
 
     {% endfor %}

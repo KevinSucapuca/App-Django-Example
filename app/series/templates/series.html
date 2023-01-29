@@ -10,7 +10,7 @@
     {% for serie in series %}
 
     <div class="serie__cotainer">
-        <span>{{ serie.title }}</span>
+        <span><a href="{% url 'nameurl' serie_id=serie.id %}">{{ serie.title }}</a></span>
         <span>{{ serie.descripcion }}</span>
     </div>
 

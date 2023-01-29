@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-PE'
 
-TIME_ZONE = 'Latin America/Bogota'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
