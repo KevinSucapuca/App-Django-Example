@@ -1,5 +1,5 @@
-from django.http import HttpResponse,request,Http404
-from django.shortcuts import render
+from django.http import HttpResponse,request
+from django.shortcuts import render,redirect
 
 
 # Create your views here.
@@ -15,7 +15,7 @@ class SeriesView(View):
 
             }
             return render(request, 'series.html', context=context)
-        return Http404()
+        return redirect('login')
     
 
 class EpisodeView(View):

@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from series.views import SeriesView,EpisodeView
-from users.views import LoginView
+from users.views import LoginView,LogoutView
+
 
 
 urlpatterns = [
@@ -24,5 +25,6 @@ urlpatterns = [
     path('series/', SeriesView.as_view()),
     path('episodes/<int:serie_id>',  EpisodeView.as_view(), name='nameurl'),
     path('login/', LoginView.as_view(), name='login'),
+    path('logout/', LogoutView.as_view(), name='logout'),
 
 ]
