@@ -5,7 +5,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.generic.base import View
 
-from series.models import Serie
+from series.models import Serie,Episodie
 
 class SeriesView(View):
     def get(self, request):
@@ -14,6 +14,19 @@ class SeriesView(View):
 
         }
         return render(request, 'series.html', context)
+    
+
+class EpisodeView(View):
+    def get(self, request, serie_id :int):
+        context = {
+            'episodie' : list(Episodie.objects.filter(serie_id=serie_id))
+            
+
+        }
+        return render(request, 'episode.html', context)
+    
+    
+    
 
 
 
