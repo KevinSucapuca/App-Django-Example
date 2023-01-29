@@ -7,6 +7,18 @@
     <title>Hola Mundo</title>
 </head>
 <body>
+    <style>
+        span{
+            color:blue;
+        }
+    </style>
+    {% for i in items %}
+    <ol>
+        <li>
+            <span> Hola Mundo {{i}}</span>
+        </li>
+    </ol>
     
+    {% endfor %}
 </body>
 </html>
