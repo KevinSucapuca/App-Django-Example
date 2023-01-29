@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Series</title>
 </head>
 <body>
     {% for serie in series %}
 
     <div class="serie__cotainer">
-        <table border="2" style="display: inline-block;">
+        <table border="2" align="center">
             <thead>
                 <tr>
                     <th><a href="{% url 'nameurl' serie_id=serie.id %}">{{ serie.title }}</a></th>

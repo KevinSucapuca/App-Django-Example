@@ -1,0 +1,12 @@
+table{
+    table-layout: fixed;
+    width: 400px;
+    
+}
+
+th, td {
+    border: 1px solid blue;
+    width: 100px;
+    word-wrap: break-word;
+    text-align: left;
+}
