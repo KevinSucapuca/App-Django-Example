@@ -19,6 +19,6 @@ from series.views import SeriesView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/series', SeriesView.as_view())
+    path('series/', SeriesView.as_view())
     
 ]

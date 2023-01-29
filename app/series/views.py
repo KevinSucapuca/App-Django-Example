@@ -5,7 +5,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.generic.base import View
 
-from app.series.models import Serie
+from series.models import Serie
 
 class SeriesView(View):
     def get(self, request):
