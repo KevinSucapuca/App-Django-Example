@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from series.views import HelloWorld
+from series.views import SeriesView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HelloWorld.as_view())
+    path('/series', SeriesView.as_view())
     
 ]

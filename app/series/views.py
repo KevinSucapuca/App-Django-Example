@@ -5,16 +5,16 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.generic.base import View
 
+from app.series.models import Serie
 
-class HelloWorld(View):
-
-    
+class SeriesView(View):
     def get(self, request):
-        context ={
-            'items':list(range(10))
-            
+        context = {
+            'series' : list(Serie.objects.all())
+
         }
-        return render(request, 'index.html' , context = context)
+        return render(request, 'series.html', context)
+
 
 
 
