@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from series.views import SeriesView,EpisodeView
 from users.views import LoginView,LogoutView
+from series.api.views import SerieApiView
+
+
 
 
 
@@ -26,5 +29,6 @@ urlpatterns = [
     path('episodes/<int:serie_id>',  EpisodeView.as_view(), name='nameurl'),
     path('', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-
+    path('api/series/', SerieApiView.as_view()),
+    
 ]

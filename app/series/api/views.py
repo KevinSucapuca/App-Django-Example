@@ -1,6 +1,6 @@
 
-from rest_framework.views import APIView, Response
-from django.http import HttpResponse,request,status
+from rest_framework.views import APIView, Response,status
+
 from series.models import Serie
 
 
