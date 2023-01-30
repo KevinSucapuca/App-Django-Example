@@ -1,7 +1,9 @@
 
 from rest_framework import serializers
-
-class SerieSerializer(serializers.Serializer):
-    id = serializers.IntegerField()
-    title = serializers.CharField()
-    descripcion = serializers.CharField()
+from series.models import Serie
+class SerieSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    
+    class Meta:
+        model = Serie
+        fields = '__all__'
