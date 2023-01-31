@@ -1,12 +1,33 @@
+
+a {color: rgb(18, 52, 145); font-family: arial; }
+
+
+.encabezado{
+    font-size: 19px;
+    text-align: center;
+}
+
 table{
     table-layout: fixed;
     width: 500px;
     
+    
+}
+
+.Peli{
+    border: 1px solid rgb(22, 124, 192);
+    width: 100px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 20px;
 }
 
 th, td {
-    border: 1px solid blue;
+    
+    border: 1px solid rgb(212, 103, 13);
     width: 100px;
     word-wrap: break-word;
     text-align: left;
+    
 }
+

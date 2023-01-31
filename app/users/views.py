@@ -13,7 +13,7 @@ class LoginView(View):
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is not None:
             login(request, user)
-            return HttpResponse(content= b'Success')
+            return redirect('series')
         return self.get(request)
     
 class LogoutView(View):

@@ -25,7 +25,7 @@ from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('series/', SeriesView.as_view()),
+    path('series/', SeriesView.as_view(),name='series'),
     path('episodes/<int:serie_id>',  EpisodeView.as_view(), name='nameurl'),
     path('', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
