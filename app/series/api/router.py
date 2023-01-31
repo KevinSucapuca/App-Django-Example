@@ -1,10 +1,10 @@
 
 
 from rest_framework.routers import DefaultRouter
-from series.views import SeriesViewSet
+from series.api.views import SerieApiView
 
 
 router = DefaultRouter()
 
-router.register(prefix='series', basename='series', viewset=SeriesViewSet)
+router.register(prefix='series', basename='series', viewset=SerieApiView)
 
