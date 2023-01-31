@@ -7,6 +7,7 @@ from .serializers import SerieSerializer
 
 
 
+
 class SerieApiView(APIView):
     
     def get (self, request):
@@ -14,12 +15,10 @@ class SerieApiView(APIView):
 
         return Response(data= series.data, status=status.HTTP_200_OK)
     
-    def post (self, request):
-        Serie.objects.create(title=request.POST['title'], descripcion=request.POST['descripcion'])
-        
-
-        return self.get(request)
-
-        
-
     
+    
+    def post (self, request):
+        serie = SerieSerializer(data=request.POST)
+        serie.is_valid(raise_exception=True)
+        Serie.objects.create(title=serie.validated_data['title'], descripcion=serie.validated_data['descripcion'])
+        return self.get(request)

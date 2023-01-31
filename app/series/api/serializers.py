@@ -6,7 +6,7 @@ from series.models import Serie
 
 from typing import (
     
-    Dict,
+    Dict
     
 )
 
@@ -18,7 +18,7 @@ class SerieSerializer(serializers.ModelSerializer):
     def validate(self, serie: Dict[str,str]):
         if not serie.get('title'):
             raise ValidationError('Título no válido')
-
+        return serie
     class Meta:
         model = Serie
         fields = '__all__'
