@@ -8,9 +8,33 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
     <title>Episode</title>
-    <a href="{% url 'series' %}" class="encabezado">ATRÁS</a>
+    
 </head>
+
+<header class="encabezado">
+    
+    <a href="{% url 'series' %}" class="encabezado">ATRÁS</a>
+    
+</header>
+
+
 <body>
+    <table border="2" align="center" >
+        <tr>
+            <th class="Peli">EPISODIOS</th>
+            
+        </tr>
+    </table >
+
+<table border="2" align="center">
+    <thead>
+        <tr>
+            <th class="encabezado-tabla">Nombre</th>
+            <th class="encabezado-tabla">Número</th>
+        </tr>
+    </table >
+
+
     {% for episode in episodes %}
 
     <div class="episodie__cotainer" >
