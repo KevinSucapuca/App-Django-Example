@@ -88,7 +88,7 @@ DATABASES = {
     'USER'  :'postgres',
     'PASSWORD' : '5ev5Co8YgH0a23Q2' ,
     'HOST' :'db.vyiagrwugqoehahdnoko.supabase.co',
-    'PORT' :'5432'
+    'PORT' :'5432',
     }
     
 }
@@ -118,7 +118,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-PE'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Lima'
+
 
 USE_I18N = True
 
