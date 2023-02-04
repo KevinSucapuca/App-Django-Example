@@ -4,6 +4,10 @@
 - Framework Django.
 - HTML/CSS.
 - PostgreSQL.
+<hr>
+### Acceso.
+- Usuario: invitado
+- Password: @KevinUser@
 
 [Visita la app en Vercel](https://app-django-example.vercel.app)
 
