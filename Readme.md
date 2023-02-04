@@ -6,8 +6,8 @@
 - PostgreSQL.
 
 ### Acceso.
-***- Usuario: invitado***
-***- Password: @KevinUser@***
+*** - Usuario: invitado***
+*** - Password: @KevinUser@***
 
 [Visita la app en Vercel](https://app-django-example.vercel.app)
 
