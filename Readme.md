@@ -5,7 +5,7 @@
 - HTML/CSS.
 - PostgreSQL.
 <hr>
-[Visita la página en Vercel](https://app-django-example.vercel.app)
+[Link de la app en Vercel](https://app-django-example.vercel.app)
 <hr>
 ## Para la documentación API se uso coreapi.
 
