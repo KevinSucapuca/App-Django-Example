@@ -4,8 +4,8 @@
 - Framework Django.
 - HTML/CSS.
 - PostgreSQL.
-<hr>
-[Link de la app en Vercel](https://app-django-example.vercel.app)
+
+[Visita la app en Vercel](https://app-django-example.vercel.app)
 
 ### Para la documentación API se uso coreapi.
 
