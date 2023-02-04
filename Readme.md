@@ -6,8 +6,8 @@
 - PostgreSQL.
 <hr>
 [Link de la app en Vercel](https://app-django-example.vercel.app)
-<hr>
-## Para la documentación API se uso coreapi.
+
+### Para la documentación API se uso coreapi.
 
 [Link del API](https://app-django-example.vercel.app/docs)
 
