@@ -150,4 +150,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'}
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = BASE_DIR/ "staticfiles_build","static"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
+#STATIC_ROOT = BASE_DIR/ "staticfiles_build","static"
