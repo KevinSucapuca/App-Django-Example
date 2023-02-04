@@ -11,7 +11,7 @@
 
 [Visita la app en Vercel](https://app-django-example.vercel.app)
 
-### Para la documentación API se uso coreapi.
+### Para la documentación API se usó coreapi.
 
 [Link del API](https://app-django-example.vercel.app/docs)
 
